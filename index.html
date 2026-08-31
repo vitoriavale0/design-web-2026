@@ -4,72 +4,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{seu nome aqui} - UX e Dev Front-end</title>
-    <!-- CSS compilado do SCSS | colocar o link correto, pois este vai dar erro, viu-->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Usando a fonte de icones aqui-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Header IFRN</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
-<body>
+<body class="min-h-screen bg-gray-100">
 
-    <header role="banner">
-        <nav role="navigation" aria-label="Navegação principal">
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#tecnologias">Tecnologias</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header class="bg-green-700 text-white">
 
-    <main role="main">
-        <section id="sobre" aria-labelledby="titulo-card">
-            <div class="card">
+        <div class="max-w-7xl mx-auto px-4">
 
-                <!-- Avatar (placeholder) -->
-                <div class="card__avatar">
-                    <img src="https://via.placeholder.com/120x120/2c3e50/ffffff?text=Bruno"
-                        alt="Avatar de Bruno Nakamura, UX e Dev Front-end">
-                </div>
+            <div class="flex items-center justify-between gap-4 py-4">
 
-                <!-- Informações -->
-                <div class="card__content">
-                    <h1 id="titulo-card">Bruno Nakamura</h1>
-                    <p class="card__subtitle">UX e Dev Front-end</p>
+                <div class="flex items-center gap-6">
 
-                    <p class="card__description">
-                        Sou um híbrido raro: Design Systems + Engenharia de Produto.
-                        Entrego de ponta a ponta – da descoberta à produção – com métricas
-                        de negócio na cabeceira e DX/UX no detalhe.<br>
-                        Tradução simultânea entre PMs, Design, Front, Back e Data.
-                        Sem teatrinho: shippo, meço, repito.
+                    <a href="/" class="no-underline">
+                        <img
+                            src="assets/img/ifrn_logo_branco.svg"
+                            alt="Instituto Federal do Rio Grande do Norte"
+                            class="w-40 sm:w-44 md:w-52"
+                        >
+                    </a>
+
+                    <p class="hidden md:block text-sm font-semibold leading-tight">
+                        Educação, Ciência, Cultura e Tecnologia<br>
+                        em todo o Rio Grande do Norte
                     </p>
 
-                    <!-- Botão com ícone -->
-                    <a href="#" class="card__button" aria-label="Vamos trabalhar juntos">
-                        Vamos trabalhar juntos <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </div>
+
+                <button
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Abrir menu"
+                    class="md:hidden p-2 bg-transparent border-0 cursor-pointer text-3xl"
+                >
+                    <i class="ph ph-list"></i>
+                </button>
+
+                 <div class="hidden md:flex items-center gap-2">
+
+                    <a
+                        href="#"
+                        aria-label="Instagram"
+                        class="w-10 h-10 rounded-full border border-white flex items-center justify-center text-xl no-underline hover:bg-white hover:text-green-700 transition"
+                    >
+                        <i class="ph ph-instagram-logo"></i>
                     </a>
+
+                    <a
+                        href="#"
+                        aria-label="X"
+                        class="w-10 h-10 rounded-full border border-white flex items-center justify-center text-xl no-underline hover:bg-white hover:text-green-700 transition"
+                    >
+                        <i class="ph ph-x-logo"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="LinkedIn"
+                        class="w-10 h-10 rounded-full border border-white flex items-center justify-center text-xl no-underline hover:bg-white hover:text-green-700 transition"
+                    >
+                        <i class="ph ph-linkedin-logo"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="YouTube"
+                        class="w-10 h-10 rounded-full border border-white flex items-center justify-center text-xl no-underline hover:bg-white hover:text-green-700 transition"
+                    >
+                        <i class="ph ph-youtube-logo"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="Spotify"
+                        class="w-10 h-10 rounded-full border border-white flex items-center justify-center text-xl no-underline hover:bg-white hover:text-green-700 transition"
+                    >
+                        <i class="ph ph-spotify-logo"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="TikTok"
+                        class="w-10 h-10 rounded-full border border-white flex items-center justify-center text-xl no-underline hover:bg-white hover:text-green-700 transition"
+                    >
+                        <i class="ph ph-tiktok-logo"></i>
+                    </a>
+
+                    <div class="h-8 w-px bg-white/50 mx-2"></div>
+
+                    <button
+                        id="altocontraste"
+                        type="button"
+                        aria-label="Alto contraste"
+                        class="w-10 h-10 rounded-full border border-white flex items-center justify-center text-xl bg-transparent cursor-pointer hover:bg-white hover:text-green-700 transition"
+                    >
+                        <i class="ph ph-circle-half"></i>
+                    </button>
+
+                    <button
+                        type="button"
+                        aria-label="Modo escuro"
+                        class="w-10 h-10 rounded-full border border-white flex items-center justify-center text-xl bg-transparent cursor-pointer hover:bg-white hover:text-green-700 transition"
+                    >
+                        <i class="ph ph-moon"></i>
+                    </button>
+
+                    <form
+                        id="busca"
+                        method="get"
+                        action="/search/"
+                        class="flex items-center bg-white rounded-full px-3 py-2 ml-2"
+                    >
+
+                        <input
+                            type="search"
+                            name="query"
+                            placeholder="Busca"
+                            aria-label="Busca"
+                            class="w-28 lg:w-36 bg-transparent text-gray-700 placeholder-gray-500 outline-none focus:ring-0"
+                        >
+
+                        <button
+                            type="submit"
+                            aria-label="Pesquisar"
+                            class="text-gray-500 text-lg bg-transparent border-0 cursor-pointer"
+                        >
+                            <i class="ph ph-magnifying-glass"></i>
+                        </button>
+
+                    </form>
+
                 </div>
 
-                <!-- Tecnologias (mockup de ícones) -->
-                <div class="card__tech" id="tecnologias">
-                    <h2 class="card__tech-title">Tecnologias que domino</h2>
-                    <ul class="card__tech-list">
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> ClickUp</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> Dropbox</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> PAYCHEX</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> elastic</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> stripe</li>
-                    </ul>
-                </div>
             </div>
-        </section>
-    </main>
 
-    <footer role="contentinfo">
-        <p>&copy; 2026 Bruno Nakamura - Exemplo didático para alunos de webdesign</p>
-    </footer>
+            <div class="border-t border-white/40"></div>
+
+            <nav
+                aria-label="Navegação principal"
+                class="hidden md:flex items-center gap-6 py-4"
+            >
+
+                <a
+                    href="#"
+                    class="text-white font-semibold no-underline hover:text-green-200 transition"
+                >
+                    Processos seletivos
+                </a>
+
+                <a
+                    href="#"
+                    class="text-white font-semibold no-underline hover:text-green-200 transition"
+                >
+                    Cursos
+                </a>
+
+                <a
+                    href="#"
+                    class="text-white font-semibold no-underline hover:text-green-200 transition"
+                >
+                    Campi
+                </a>
+
+                <a
+                    href="#"
+                    class="text-white font-semibold no-underline hover:text-green-200 transition"
+                >
+                    Institucional
+                </a>
+
+                <a
+                    href="#"
+                    class="text-white font-semibold no-underline hover:text-green-200 transition"
+                >
+                    Acesso à Informação
+                </a>
+
+                <a
+                    href="#"
+                    class="text-white font-semibold no-underline hover:text-green-200 transition"
+                >
+                    Eventos
+                </a>
+
+                <a
+                    href="#"
+                    class="text-white font-semibold no-underline hover:text-green-200 transition"
+                >
+                    Serviços
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
 </body>
 
 </html>
