@@ -4,72 +4,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{seu nome aqui} - UX e Dev Front-end</title>
-    <!-- CSS compilado do SCSS | colocar o link correto, pois este vai dar erro, viu-->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Usando a fonte de icones aqui-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Vitória Vale - Portfólio</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body data-theme="light">
 
-    <header role="banner">
-        <nav role="navigation" aria-label="Navegação principal">
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#tecnologias">Tecnologias</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="navbar bg-[#6b1f2a] text-white px-6">
+        <div class="flex-1">
+            <a class="text-xl font-bold">Portfólio</a>
+        </div>
 
-    <main role="main">
-        <section id="sobre" aria-labelledby="titulo-card">
-            <div class="card">
+        <div>
+            <a href="#contato" class="btn bg-white text-[#6b1f2a] border-0">
+                Contato
+            </a>
+        </div>
+    </div>
 
-                <!-- Avatar (placeholder) -->
-                <div class="card__avatar">
-                    <img src="https://via.placeholder.com/120x120/2c3e50/ffffff?text=Bruno"
-                        alt="Avatar de Bruno Nakamura, UX e Dev Front-end">
+    <section class="hero min-h-[60vh] bg-base-200">
+        <div class="hero-content text-center">
+            <div class="max-w-xl">
+
+                <div class="flex justify-center gap-2 mb-4">
+                    <span class="badge bg-[#6b1f2a] border-0 text-white">
+                        Estudante
+                    </span>
+
+                    <span class="badge badge-outline">
+                        Desenvolvimento Web
+                    </span>
                 </div>
 
-                <!-- Informações -->
-                <div class="card__content">
-                    <h1 id="titulo-card">Bruno Nakamura</h1>
-                    <p class="card__subtitle">UX e Dev Front-end</p>
+                <h1 class="text-4xl font-bold">
+                    Oie, eu sou Vitória Vale!
+                </h1>
 
-                    <p class="card__description">
-                        Sou um híbrido raro: Design Systems + Engenharia de Produto.
-                        Entrego de ponta a ponta – da descoberta à produção – com métricas
-                        de negócio na cabeceira e DX/UX no detalhe.<br>
-                        Tradução simultânea entre PMs, Design, Front, Back e Data.
-                        Sem teatrinho: shippo, meço, repito.
+                <p class="py-6">
+                    Sou estudante e estou aprendendo sobre desenvolvimento web.
+                    Aqui estão alguns dos trabalhos que já fiz.
+                </p>
+
+                <a href="#projetos" class="btn bg-[#6b1f2a] text-white border-0">
+                    Ver projetos
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="py-12 px-6 bg-base-100">
+
+        <h2 class="text-3xl font-bold text-center mb-8">
+            Meus projetos
+        </h2>
+
+        <div class="grid gap-6 md:grid-cols-3 max-w-6xl mx-auto">
+
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h2 class="card-title">
+                        Página IFRN
+                    </h2>
+
+                    <p>
+                        Página feita usando HTML e Tailwind CSS para uma atividade.
                     </p>
 
-                    <!-- Botão com ícone -->
-                    <a href="#" class="card__button" aria-label="Vamos trabalhar juntos">
-                        Vamos trabalhar juntos <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                    </a>
-                </div>
-
-                <!-- Tecnologias (mockup de ícones) -->
-                <div class="card__tech" id="tecnologias">
-                    <h2 class="card__tech-title">Tecnologias que domino</h2>
-                    <ul class="card__tech-list">
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> ClickUp</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> Dropbox</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> PAYCHEX</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> elastic</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> stripe</li>
-                    </ul>
+                    <div class="card-actions justify-end">
+                        <button class="btn bg-[#6b1f2a] text-white border-0">
+                            Ver projeto
+                        </button>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
 
-    <footer role="contentinfo">
-        <p>&copy; 2026 Bruno Nakamura - Exemplo didático para alunos de webdesign</p>
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h2 class="card-title">
+                        Projeto Web
+                    </h2>
+
+                    <p>
+                        Um projeto feito durante as aulas para praticar estilos e páginas web.
+                    </p>
+
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-outline">
+                            Ver projeto
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h2 class="card-title">
+                        Meu portfólio
+                    </h2>
+
+                    <p>
+                        Esta página é um espaço para mostrar um pouco do que estou aprendendo.
+                    </p>
+
+                    <div class="card-actions justify-end">
+                        <button class="btn bg-[#6b1f2a] text-white border-0">
+                            Ver projeto
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contato" class="py-12 px-6 bg-base-200">
+
+        <div class="max-w-xl mx-auto">
+
+            <h2 class="text-3xl font-bold text-center mb-8">
+                Entre em contato
+            </h2>
+
+            <div class="card bg-base-100 shadow-md">
+                <div class="card-body">
+
+                    <label class="form-control">
+                        <div class="label">
+                            <span class="label-text">Nome</span>
+                        </div>
+
+                        <input
+                            type="text"
+                            placeholder="Digite seu nome"
+                            class="input input-bordered w-full"
+                        />
+                    </label>
+
+                    <label class="form-control mt-3">
+                        <div class="label">
+                            <span class="label-text">E-mail</span>
+                        </div>
+
+                        <input
+                            type="email"
+                            placeholder="Digite seu e-mail"
+                            class="input input-bordered w-full"
+                        />
+                    </label>
+
+                    <label class="form-control mt-3">
+                        <div class="label">
+                            <span class="label-text">Mensagem</span>
+                        </div>
+
+                        <textarea
+                            class="textarea textarea-bordered w-full"
+                            placeholder="Digite sua mensagem"
+                        ></textarea>
+                    </label>
+
+                    <button class="btn bg-[#6b1f2a] text-white border-0 mt-4">
+                        Enviar
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-8 text-center bg-base-100">
+
+        <h2 class="text-xl font-bold mb-4">
+            Temas
+        </h2>
+
+        <div class="flex justify-center gap-3">
+
+            <button
+                class="btn"
+                onclick="document.body.setAttribute('data-theme', 'light')">
+                Claro
+            </button>
+
+            <button
+                class="btn btn-neutral"
+                onclick="document.body.setAttribute('data-theme', 'dark')">
+                Escuro
+            </button>
+
+        </div>
+
+    </section>
+
+    <footer class="bg-[#4a141c] text-white text-center p-5">
+        <p>Vitória Vale - Portfólio de estudante</p>
     </footer>
-</body>
 
+</body>
 </html>

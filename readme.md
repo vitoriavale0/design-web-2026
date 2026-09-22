@@ -1,89 +1,41 @@
-### Repositório da turma de Design Web 2026
+# Tarefa 33 – Página pessoal com DaisyUI
 
-Fazendo clone de repositório:
- git clone <link-repo>
+## Sobre o projeto
 
-### Comandos Básicos do Git
-1. git add .
-2. git commit -m "mensagem"
-3. git push
+Fiz uma página pessoal usando Tailwind CSS e DaisyUI.
 
-Configuração inicial:
-git config --global user.name "aluno"
-git config --global user.email "email"
-### Repositório da turma de Design Web 2026
+A página mostra um pouco sobre mim, alguns projetos e uma área para contato.
 
-Fazendo clone de repositório:
- git clone <link-repo>
+## O que usei
 
-### Comandos Básicos do Git
-1. git add .
-2. git commit -m "mensagem"
-3. git push
+- HTML
+- Tailwind CSS
+- DaisyUI
 
-Configuração inicial:
-git config --global user.name "aluno"
-git config --global user.email "email"
+## Componentes do DaisyUI
 
----
+Usei alguns componentes do DaisyUI na página:
 
-# Cartão de Apresentação – Bruno Nakamura
+- Navbar
+- Hero
+- Badges
+- Cards
+- Botões
+- Inputs
+- Formulário
+- Temas
 
-Projeto didático para ensinar a integração entre **HTML semântico** e **SCSS** (pré-processador CSS).
+## Temas
 
-## Estrutura
-projeto/
-├── index.html 
-├── scss/
-└── style.scss 
-└── css/
-└── style.css # Arquivo gerado pelo SCSS (não edite jamais)
+A página possui dois temas:
 
-## Como usar
-1. **Clone ou baixe** os arquivos.
-2. **Compile o SCSS** para CSS:
-   - Com o Sass instalado: sass scss/style.scss css/style.css --watch
-   - Ou use a extensão "Live Sass Compiler" no VS Code.
-3. **Abra** o index.html no navegador.
+- Claro
+- Escuro
 
-## Personalize
-**Cores**: altere as variáveis no início do style.scss ($color-primary, $color-secondary, etc.).
-**Imagem**: substitua a URL placeholder pelo seu próprio avatar.
-**Conteúdo**: edite o HTML para mudar texto, tecnologias e links.
+Os botões no final da página permitem trocar entre os dois temas.
 
-## Boas práticas aplicadas
-Tags HTML semânticas (header, main, section, footer)
-Atributos de acessibilidade (role, aria-label, focus-visible)
-Responsividade com mixins (mobile-first)
-Código SCSS organizado com variáveis e aninhamento
----
+## Escolhas
 
-# Cartão de Apresentação – Bruno Nakamura
+Escolhi usar vermelho escuro como cor principal porque queria uma página simples e diferente.
 
-Projeto didático para ensinar a integração entre **HTML semântico** e **SCSS** (pré-processador CSS).
-
-## Estrutura
-projeto/
-├── index.html 
-├── scss/
-└── style.scss 
-└── css/
-└── style.css # Arquivo gerado pelo SCSS (não edite jamais)
-
-## Como usar
-1. **Clone ou baixe** os arquivos.
-2. **Compile o SCSS** para CSS:
-   - Com o Sass instalado: sass scss/style.scss css/style.css --watch
-   - Ou use a extensão "Live Sass Compiler" no VS Code.
-3. **Abra** o index.html no navegador.
-
-## Personalize
-**Cores**: altere as variáveis no início do style.scss ($color-primary, $color-secondary, etc.).
-**Imagem**: substitua a URL placeholder pelo seu próprio avatar.
-**Conteúdo**: edite o HTML para mudar texto, tecnologias e links.
-
-## Boas práticas aplicadas
-Tags HTML semânticas (header, main, section, footer)
-Atributos de acessibilidade (role, aria-label, focus-visible)
-Responsividade com mixins (mobile-first)
-Código SCSS organizado com variáveis e aninhamento
+Também deixei os textos curtos e diretos para combinar com uma página pessoal.
